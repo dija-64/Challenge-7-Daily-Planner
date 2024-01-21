@@ -1,7 +1,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  line-height: 1;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 textarea {
@@ -15,20 +23,42 @@ textarea {
 
 header {
   text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-  padding: 60px;
+  background-color: #2c3e50;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 .description {
   white-space: pre-wrap;
 }
 
-.time-block {
+th {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
   text-align: center;
-  border-radius: 15px;
+}
+
+.time-block {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ecf0f1;
+}
+
+.time-block input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
 }
 
 .row {
@@ -44,29 +74,44 @@ header {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #e58888;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #8fe38f;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #ba94ee;
   color: white;
 }
 
-.saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+.save-btn {
+  border: none;
+  background-color: #3498db;
   color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+.save-btn i:hover {
+  background-color: #2980b9;
+}
+
+.clear-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.clear-btn:hover {
+  background-color: #c0392b;
 }
